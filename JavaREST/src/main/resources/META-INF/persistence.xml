@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.0">
+    <persistence-unit name="default">
+
+        <class>model.Bookingdetails</class>
+        <class>model.Bookings</class>
+        <class>model.Customers</class>
+        <class>model.Triptypes</class>
+        <class>model.Regions</class>
+        <class>model.Classes</class>
+        <class>model.Packages</class>
+        <properties>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:mariadb://localhost:3306/travelexperts"/>
+            <property name="jakarta.persistence.jdbc.driver" value="org.mariadb.jdbc.Driver"/>
+            <property name="jakarta.persistence.jdbc.user" value="Fred"/>
+            <property name="jakarta.persistence.jdbc.password" value="password"/>
+            <property name="toplink.jdbc.url" value="jdbc:mariadb://localhost:3306/travelexperts"/>
+            <property name="toplink.jdbc.driver" value="org.mariadb.jdbc.Driver"/>
+            <property name="toplink.jdbc.user" value="Fred"/>
+            <property name="toplink.jdbc.password" value="password"/>
+            <property name="hibernate.connection.url" value="jdbc:mariadb://localhost:3306/travelexperts"/>
+            <property name="hibernate.connection.driver_class" value="org.mariadb.jdbc.Driver"/>
+            <property name="hibernate.connection.username" value="Fred"/>
+            <property name="hibernate.connection.password" value="password"/>
+            <property name="openjpa.ConnectionURL" value="jdbc:mariadb://localhost:3306/travelexperts"/>
+            <property name="openjpa.ConnectionDriverName" value="org.mariadb.jdbc.Driver"/>
+            <property name="openjpa.ConnectionUserName" value="Fred"/>
+            <property name="openjpa.ConnectionPassword" value="password"/>
+            <property name="eclipselink.jdbc.url" value="jdbc:mariadb://localhost:3306/travelexperts"/>
+            <property name="eclipselink.jdbc.driver" value="org.mariadb.jdbc.Driver"/>
+            <property name="eclipselink.jdbc.user" value="Fred"/>
+            <property name="eclipselink.jdbc.password" value="password"/>
+        </properties>
+    </persistence-unit>
+</persistence>
